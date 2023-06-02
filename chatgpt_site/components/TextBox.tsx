@@ -1,5 +1,3 @@
-// components/TextBox.tsx
-
 import React, { ChangeEvent } from 'react';
 
 interface TextBoxProps {
@@ -18,7 +16,7 @@ const TextBox: React.FC<TextBoxProps> = ({ value, onChange }) => {
         value={value}
         onChange={handleInputChange}
         placeholder="Enter text..."
-        style={{ width: '900px', minHeight: '100px', maxHeight: '200px'}} // Adjust the width and height as desired
+        style={{ width: '100%', minHeight: '100px', maxHeight: '200px' }} // Adjust the height as desired
         className="text-input" // Add a class name for custom styling
       />
     </div>
