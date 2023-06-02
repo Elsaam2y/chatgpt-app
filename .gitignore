@@ -1,0 +1,5 @@
+.env
+.DS_Store
+original_data/
+*.zip
++.pyc
