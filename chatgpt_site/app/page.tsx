@@ -55,7 +55,7 @@ export default function Home() {
       </div>
 
       <div style={{ fontSize: '24px', fontWeight: 'bold', position: 'relative', top: '-70px' }}>
-        Let's Talk!
+        Let&apos;s Talk!
       </div>
       <div style={{ fontSize: '24px', position: 'relative', top: '-10px', fontFamily: 'Arial'}}>
         <div className="text-input-container"> {/* Container element for styling */}
