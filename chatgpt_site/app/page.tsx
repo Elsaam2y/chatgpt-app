@@ -18,7 +18,13 @@ export default function Home() {
     setLoading(true); // Set loading state to true
 
     try {
+      //old endpoint
+      //const response = await fetch(`https://lz2chqp1r7.execute-api.us-east-1.amazonaws.com/prod/generate_response?prompt=${encodeURIComponent(text)}`);
+      
+      
+      // new endpoint
       const response = await fetch(`https://lz2chqp1r7.execute-api.us-east-1.amazonaws.com/prod/generate_response?prompt=${encodeURIComponent(text)}`);
+
       const data = await response.json();
       const content = data.response.choices[0].message.content;
       setOutput(content);
